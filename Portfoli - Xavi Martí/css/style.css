@@ -1,0 +1,96 @@
+/* COMENTARI */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-principal: 'Source Sans Pro', sans-serif;
+    --font-secundaria: 'Source Code Pro', monospace;
+
+    --pes-font: 300;
+    --pes-negreta: 900;
+
+    --colorClar: #fff;
+    --colorFosc: #303030;
+    --colorResaltar: #16e0bd;
+
+    --tamany-h1: 3rem;
+    --tamany-h2: 2.25rem;
+    --tamany-h3: 1.25rem;
+    --tamany-body: 1rem;
+
+}
+
+@media (min-width: 800px) {
+    :root {
+        --tamany-h1: 4.5rem;
+        --tamany-h2: 3.75rem;
+        --tamany-h3: 1.5rem;
+        --tamany-body: 1.125rem;
+    }
+}
+
+strong { 
+    font-weight: var(--pes-negreta) 
+}
+
+body {
+    background: var(--colorClar);
+    color: var(--colorFosc);
+    margin: 0;
+    font-family: var(--font-principal);
+    font-size: var(--tamany-body);
+    line-height: 1.6;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--tamany-h1)
+}
+
+h2 {
+    font-size: var(--tamany-h2)
+}
+
+h3 {
+    font-size: var(--tamany-h3)
+}
+
+.titol {
+    margin-bottom: 0.25em;
+}
+.titol-intro {
+    font-weight: var(--pes-font);
+}
+
+.subtitol {
+    margin: 0;
+    font-size: var(--tamany-h3);
+}
+
+.subtitol-intro,
+.subtitol-about {
+    background: var(--colorResaltar);
+    font-family: var(--font-secundaria);
+}
+
+.titol-intro strong {
+    display: block;
+}
+
+
+
